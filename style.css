@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculator{
+    width: 400px;
+    border-radius: 40px;
+    display: grid;
+    grid-template-areas: 
+    "ekran ekran ekran ekran"
+    "ac tolerans yuzde bolme"
+    "yedi sekiz dokuz carpi"
+    "dort bes alti eksi"
+    "bir iki uc arti"
+    "sifir sifir nokta esittir";
+
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 200px repeat(5, 80px);
+    gap: 10px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Helvetica Neue", sans-serif ;
+    font-size: 35px;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+.calculator > * {
+    background-color: royalblue;
+    border-radius: 100%;
+    /* text-align: center; */
+    /* justify-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ekran{
+    grid-area: ekran;
+    border-radius: 50px;
+    background-color: black;
+    justify-content: flex-end;
+    font-size: 55px;
+    align-items: flex-end;
+}
+
+.ac{
+    grid-area: ac;
+    color: black;
+    background-color: #a5a5a5;
+}
+
+.tolerans{
+    grid-area: tolerans;
+    color: black;
+    background-color: #a5a5a5;
+}
+
+.yuzde{
+    grid-area: yuzde;
+    color: black;
+    background-color: #a5a5a5;
+}
+
+.bolme{
+    grid-area: bolme;
+    background-color: #f1a33c;
+}
+
+.carpi{
+    grid-area: carpi;
+    background-color: #f1a33c;
+}
+
+.eksi{
+    grid-area: eksi;
+    background-color: #f1a33c;
+}
+
+.arti{
+    grid-area: arti;
+    background-color: #f1a33c;
+}
+
+.sifir{
+    grid-area: sifir;
+    border-radius: 100px;
+    justify-content: flex-start;
+    padding: 35px;
+    background-color: #333333;
+}
+
+.nokta{
+    grid-area: nokta;
+    background-color: #333333;
+}
+.esittir{
+    grid-area: esittir;
+    background-color: #333333;
+}
+.bir{
+    grid-area: bir;
+    background-color: #333333;
+}
+.iki{
+    grid-area: iki;
+    background-color: #333333;
+}
+.uc{
+    grid-area: uc;
+    background-color: #333333;
+}
+.dort{
+    grid-area: dort;
+    background-color: #333333;
+}
+.bes{
+    grid-area: bes;
+    background-color: #333333;
+}
+.alti{
+    grid-area: alti;
+    background-color: #333333;
+}
+.yedi{
+    grid-area: yedi;
+    background-color: #333333;
+}
+.sekiz{
+    grid-area: sekiz;
+    background-color: #333333;
+}
+.dokuz{
+    grid-area: dokuz;
+    background-color: #333333;
+}
+
+.ac:hover,
+.tolerans:hover,
+.yuzde:hover{
+    cursor: pointer;
+    background-color: #757575;
+}
+
+.bir:hover,
+.iki:hover,
+.uc:hover,
+.dort:hover,
+.bes:hover,
+.alti:hover,
+.yedi:hover,
+.sekiz:hover,
+.dokuz:hover,
+.sifir:hover,
+.nokta:hover,
+.esittir:hover{
+    cursor: pointer;
+    background-color: #111111;
+  }
+
+  .bolme:hover,
+  .carpi:hover,
+  .arti:hover,
+  .eksi:hover {
+    cursor: pointer;
+    background-color: #c57b1a;
+}
+
+
+
